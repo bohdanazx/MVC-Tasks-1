@@ -1,6 +1,6 @@
 const http = require('http');
-const PORT = 4001;
-const { handleHome, handleAddCar, handleCar, handlePageNotFound } = require('./routes');
+const PORT = 3000;
+const { handleHome, handleAddCar, handleCar, handlePageNotFound } = require('./routes/index');
 
 const server = http.createServer((req, res) => {
     const { method, url } = req;
